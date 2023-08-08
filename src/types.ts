@@ -1,109 +1,130 @@
 export type ColorValueHex = `#${string}`;
 
-export type FrameDesign =
-  | 'ANTHRACITE'
-  | 'BLACK_METAL'
-  | 'BRASS'
-  | 'CHROME'
-  | 'GLOSSY_METAL'
-  | 'GOLD'
-  | 'METAL'
-  | 'SHINY_METAL'
-  | 'STEEL'
-  | 'TILTED_BLACK'
-  | 'TILTED_GRAY';
+export enum FrameDesign {
+  Anthracite = 'ANTHRACITE',
+  BlackMetal = 'BLACK_METAL',
+  Brass = 'BRASS',
+  Chrome = 'CHROME',
+  GlossyMetal = 'GLOSSY_METAL',
+  Gold = 'GOLD',
+  Metal = 'METAL',
+  ShinyMetal = 'SHINY_METAL',
+  Steel = 'STEEL',
+  TiltedBlack = 'TILTED_BLACK',
+  TiltedGray = 'TILTED_GRAY',
+}
 
-export type BackgroundColor =
-  | 'ANTHRACITE'
-  | 'BEIGE'
-  | 'BLACK'
-  | 'BLUE'
-  | 'BROWN'
-  | 'BRUSHED_METAL'
-  | 'BRUSHED_STAINLESS'
-  | 'CARBON'
-  | 'DARK_GRAY'
-  | 'GREEN'
-  | 'LIGHT_GRAY'
-  | 'MUD'
-  | 'PUNCHED_SHEET'
-  | 'RED'
-  | 'SATIN_GRAY'
-  | 'STAINLESS'
-  | 'TURNED'
-  | 'WHITE';
+export enum BackgroundColor {
+  Anthracite = 'ANTHRACITE',
+  Beige = 'BEIGE',
+  Black = 'BLACK',
+  Blue = 'BLUE',
+  Brown = 'BROWN',
+  BrushedMetal = 'BRUSHED_METAL',
+  BrushedStainless = 'BRUSHED_STAINLESS',
+  Carbon = 'CARBON',
+  DarkGray = 'DARK_GRAY',
+  Green = 'GREEN',
+  LightGray = 'LIGHT_GRAY',
+  Mud = 'MUD',
+  PunchedSheet = 'PUNCHED_SHEET',
+  Red = 'RED',
+  SatinGray = 'SATIN_GRAY',
+  Stainless = 'STAINLESS',
+  Turned = 'TURNED',
+  White = 'WHITE',
+}
 
-export type ForegroundType = 'TYPE1' | 'TYPE2' | 'TYPE3' | 'TYPE4' | 'TYPE5';
-export type KnobType = 'STANDARD_KNOB' | 'METAL_KNOB';
-export type KnobStyle = 'BLACK' | 'BRASS' | 'SILVER';
-export type LedColor =
-  | 'BLUE_LED'
-  | 'CYAN_LED'
-  | 'GREEN_LED'
-  | 'MAGENTA_LED'
-  | 'ORANGE_LED'
-  | 'RED_LED'
-  | 'WHITE_LED'
-  | 'YELLOW_LED';
+export enum ForegroundType {
+  Type1 = 'TYPE1',
+  Type2 = 'TYPE2',
+  Type3 = 'TYPE3',
+  Type4 = 'TYPE4',
+  Type5 = 'TYPE5',
+}
 
-export type LCDColor =
-  | 'AMBER'
-  | 'BEIGE'
-  | 'BLACK'
-  | 'BLACKRED'
-  | 'BLUE'
-  | 'BLUE2'
-  | 'BLUE_BLACK'
-  | 'BLUE_BLUE'
-  | 'BLUE_DARKBLUE'
-  | 'BLUE_GRAY'
-  | 'DARKBLUE'
-  | 'DARKGREEN'
-  | 'GRAY'
-  | 'GREEN'
-  | 'LIGHTBLUE'
-  | 'LILA'
-  | 'ORANGE'
-  | 'RED'
-  | 'RED_DARKRED'
-  | 'SECTIONS'
-  | 'STANDARD'
-  | 'STANDARD_GREEN'
-  | 'WHITE'
-  | 'YELLOW';
+export enum KnobType {
+  Standard = 'STANDARD_KNOB',
+  Metal = 'METAL_KNOB',
+}
 
-export type PointerType =
-  | 'TYPE1'
-  | 'TYPE2'
-  | 'TYPE3'
-  | 'TYPE4'
-  | 'TYPE5'
-  | 'TYPE6'
-  | 'TYPE7'
-  | 'TYPE8'
-  | 'TYPE9'
-  | 'TYPE10'
-  | 'TYPE11'
-  | 'TYPE12'
-  | 'TYPE13'
-  | 'TYPE14'
-  | 'TYPE15'
-  | 'TYPE16';
+export enum KnobStyle {
+  Black = 'BLACK',
+  Brass = 'BRASS',
+  Silver = 'SILVER',
+}
 
-export type ColorDef =
-  | 'BLACK'
-  | 'BLUE'
-  | 'CYAN'
-  | 'GRAY'
-  | 'GREEN'
-  | 'GREEN_LCD'
-  | 'JUG_GREEN'
-  | 'MAGENTA'
-  | 'ORANGE'
-  | 'RAITH'
-  | 'RED'
-  | 'WHITE'
-  | 'YELLOW';
+export enum LedColor {
+  Blue = 'BLUE_LED',
+  Cyan = 'CYAN_LED',
+  Green = 'GREEN_LED',
+  Magenta = 'MAGENTA_LED',
+  Orange = 'ORANGE_LED',
+  Red = 'RED_LED',
+  White = 'WHITE_LED',
+  Yellow = 'YELLOW_LED',
+}
+
+export enum LcdColor {
+  Amber = 'AMBER',
+  Beige = 'BEIGE',
+  Black = 'BLACK',
+  BlackRed = 'BLACKRED',
+  Blue = 'BLUE',
+  Blue2 = 'BLUE2',
+  BlueBlack = 'BLUE_BLACK',
+  BlueBlue = 'BLUE_BLUE',
+  BlueDarkblue = 'BLUE_DARKBLUE',
+  BlueGray = 'BLUE_GRAY',
+  Darkblue = 'DARKBLUE',
+  Darkgreen = 'DARKGREEN',
+  Gray = 'GRAY',
+  Green = 'GREEN',
+  Lightblue = 'LIGHTBLUE',
+  Lila = 'LILA',
+  Orange = 'ORANGE',
+  Red = 'RED',
+  RedDarkred = 'RED_DARKRED',
+  Sections = 'SECTIONS',
+  Standard = 'STANDARD',
+  StandardGreen = 'STANDARD_GREEN',
+  White = 'WHITE',
+  Yellow = 'YELLOW',
+}
+
+export enum PointerType {
+  Type1 = 'TYPE1',
+  Type2 = 'TYPE2',
+  Type3 = 'TYPE3',
+  Type4 = 'TYPE4',
+  Type5 = 'TYPE5',
+  Type6 = 'TYPE6',
+  Type7 = 'TYPE7',
+  Type8 = 'TYPE8',
+  Type9 = 'TYPE9',
+  Type10 = 'TYPE10',
+  Type11 = 'TYPE11',
+  Type12 = 'TYPE12',
+  Type13 = 'TYPE13',
+  Type14 = 'TYPE14',
+  Type15 = 'TYPE15',
+  Type16 = 'TYPE16',
+}
+export enum ColorDef {
+  Black = 'BLACK',
+  Blue = 'BLUE',
+  Cyan = 'CYAN',
+  Gray = 'GRAY',
+  Green = 'GREEN',
+  GreenLcd = 'GREEN_LCD',
+  JugGreen = 'JUG_GREEN',
+  Magenta = 'MAGENTA',
+  Orange = 'ORANGE',
+  Raith = 'RAITH',
+  Red = 'RED',
+  White = 'WHITE',
+  Yellow = 'YELLOW',
+}
 
 // common types
 export interface Knob {
@@ -116,7 +137,7 @@ export interface Pointer {
 }
 export interface Lcd {
   digitalFont?: boolean;
-  lcdColor?: LCDColor;
+  lcdColor?: LcdColor;
   lcdDecimals?: number;
   noLcdVisible?: boolean;
 }
