@@ -44,16 +44,16 @@ function App() {
 
 ## TODO
 
-| Web Component | Types              | Component          | Stories            |
-| ------------- | ------------------ | ------------------ | ------------------ |
+| Web Component |       Types        |     Component      |      Stories       |
+| :------------ | :----------------: | :----------------: | :----------------: |
 | Altimeter     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Battery       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Compass       | :heavy_check_mark: | :heavy_check_mark: | :construction:     |
-| Horizon       | :heavy_check_mark: | :heavy_check_mark: | :construction:     |
-| Level         | :heavy_check_mark: | :heavy_check_mark: | :x:                |
-| LightBulb     | :heavy_check_mark: | :heavy_check_mark: | :construction:     |
-| LightLed      | :heavy_check_mark: | :heavy_check_mark: | :construction:     |
-| Odometer      | :heavy_check_mark: | :heavy_check_mark: | :x:                |
-| StopWatch     | :heavy_check_mark: | :heavy_check_mark: | :x:                |
-| TrafficLight  | :heavy_check_mark: | :heavy_check_mark: | :x:                |
-| WindDirection | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| Compass       | :heavy_check_mark: | :heavy_check_mark: |   :construction:   |
+| Horizon       | :heavy_check_mark: | :heavy_check_mark: |   :construction:   |
+| Level         | :heavy_check_mark: | :heavy_check_mark: |        :x:         |
+| LightBulb     | :heavy_check_mark: | :heavy_check_mark: |   :construction:   |
+| LightLed      | :heavy_check_mark: | :heavy_check_mark: |   :construction:   |
+| Odometer      | :heavy_check_mark: | :heavy_check_mark: |        :x:         |
+| StopWatch     | :heavy_check_mark: | :heavy_check_mark: |        :x:         |
+| TrafficLight  | :heavy_check_mark: | :heavy_check_mark: |        :x:         |
+| WindDirection | :heavy_check_mark: | :heavy_check_mark: |        :x:         |
