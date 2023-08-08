@@ -7,7 +7,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -30,6 +31,7 @@
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
+    "chromatic": "^6.21.0",
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
@@ -55,5 +57,7 @@
       "import": "./dist/react-steelseries.es.js",
       "require": "./dist/react-steelseries.umd.js"
     }
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "react-steelseries@0.0.0"
 }
