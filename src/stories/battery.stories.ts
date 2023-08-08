@@ -13,7 +13,7 @@ type Story = StoryObj<typeof Steelseries.Battery>;
 
 export const Default: Story = {
   args: {
-    value: 65,
+    value: 75,
   },
   argTypes: {
     ...SizeArgTypes,
