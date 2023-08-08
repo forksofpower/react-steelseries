@@ -1,27 +1,59 @@
-# React + TypeScript + Vite
+# React Steelseries
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Steelseries Gauges v2 web components wrapped up for react + ts.
 
-Currently, two official plugins are available:
+[View the Storybook](https://64d2ac6d1aca82d3fc496b0f-xwpdiukkph.chromatic.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Get Started
 
-## Expanding the ESLint configuration
+Install the dependency using the package manager of your choice
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+npm i react-steelseries
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```bash
+yarn add react-steelseries
+```
+
+```
+pnpn add react-steelseries
+```
+
+Import the library
+
+```ts
+// es6/TS
+import Steelseries from "react-steelseries";
+```
+
+```js
+// umd
+const Steelseries = require("react-steelseries");
+```
+
+Example usage:
+
+```tsx
+import Steelseries, { ColorDef } from "react-steelseries";
+
+function App() {
+  return <Steelseries.Altimeter value={75} pointerColor={ColorDef.Blue} />;
+}
+```
+
+## TODO
+
+| Web Component | Types              | Component          | Stories            |
+| ------------- | ------------------ | ------------------ | ------------------ |
+| Altimeter     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Battery       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Compass       | :heavy_check_mark: | :heavy_check_mark: | :construction:     |
+| Horizon       | :heavy_check_mark: | :heavy_check_mark: | :construction:     |
+| Level         | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| LightBulb     | :heavy_check_mark: | :heavy_check_mark: | :construction:     |
+| LightLed      | :heavy_check_mark: | :heavy_check_mark: | :construction:     |
+| Odometer      | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| StopWatch     | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| TrafficLight  | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| WindDirection | :heavy_check_mark: | :heavy_check_mark: | :x:                |
